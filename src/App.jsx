@@ -1,13 +1,11 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Welcome from './Pages/Welcome'
-import Menu from './Components/Menu'
 import Footer from './Components/Footer'
 import Login from './Pages/Login'
 import Register from './Pages/Register'
 import Dashboard from './Pages/Dashboard'
-import EmployeeProfile from "./Pages/EmployeeProfile.jsx";
-
+import Profile from './Pages/Profile'
 
 function App() {
 
@@ -19,7 +17,7 @@ function App() {
         <Route path='/Login' element={<Login></Login>}></Route>
         <Route path='/Register' element={<Register></Register>}></Route>
         <Route path='/Dashboard' element={<Dashboard></Dashboard>}></Route>
-        <Route path='/employee-profile/:id' element={<Employeeprofile></Employeeprofile>}></Route>
+        <Route path='/employee-profile/:id' element={<Profile></Profile>}></Route>
 
 
       </Routes>
