@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams, } from 'react-router-dom'
 
-function Employeeprofile() {
+function Employeeprofile_Temp() {
   const {id}=useParams();
   const navigate=useNavigate();
   const [employee, setEmployee] = useState({
@@ -137,4 +137,4 @@ useEffect(()=>{
   )
 }
 
-export default Employeeprofile
+export default Employeeprofile_Temp;
