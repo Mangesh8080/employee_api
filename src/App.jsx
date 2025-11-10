@@ -6,7 +6,8 @@ import Footer from './Components/Footer'
 import Login from './Pages/Login'
 import Register from './Pages/Register'
 import Dashboard from './Pages/Dashboard'
-import Employeeprofile from './Pages/employeeprofile'
+import Employeeprofile from './Pages/employeeprofile.jsx'
+
 
 function App() {
 
