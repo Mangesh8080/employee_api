@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -7,9 +8,9 @@ function Footer() {
         © {new Date().getFullYear()} MyWebsite. All rights reserved.
       </p>
       <div className="mt-2 space-x-4">
-        <a href="#" className="hover:text-white">Privacy Policy</a>
-        <a href="#" className="hover:text-white">Terms of Service</a>
-        <a href="#" className="hover:text-white">Contact</a>
+        <Link to="/privacy" className="hover:text-white">Privacy Policy</Link>
+        <Link to="/terms" className="hover:text-white">Terms of Service</Link>
+        <Link to="/contact" className="hover:text-white">Contact</Link>
       </div>
     </footer>
   );

@@ -17,15 +17,15 @@ function Employeeprofile() {
   };
   
 useEffect(()=>{
-  axios.get(`http://localhost:8080/getById?id=${id}`)
+  axios.get(`https://employeeapi-tzw2.onrender.com/getById?id=${id}`)
   .then((response)=>{setEmployee(response.data)})
-  .catch((error)=>{alert("Error fetching employee data.");})
-},[])
+  .catch(()=>{alert("Error fetching employee data.");})
+},[id])
 
   const updateEmployee = (e) => {
     e.preventDefault();
     axios
-      .put("http://localhost:8080/update", {
+      .put("https://employeeapi-tzw2.onrender.com/update", {
         id: employee.id,
         name: employee.name,
         email: employee.email,

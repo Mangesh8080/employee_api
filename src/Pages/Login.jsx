@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Menu from "../Components/Menu";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function Login() {
   const [employee, setEmployee] = useState({ email: "", password: "" });
@@ -16,7 +16,7 @@ function Login() {
     e.preventDefault();
 
     axios
-      .post("http://localhost:8080/login", {
+      .post("https://employeeapi-tzw2.onrender.com/login", {
         email: employee.email,
         password: employee.password,
       })
@@ -82,9 +82,9 @@ function Login() {
 
           <p className="text-center text-gray-600 mt-4">
             Don’t have an account?{" "}
-            <a href="/Register" className="text-indigo-600 hover:underline">
+            <Link to="/Register" className="text-indigo-600 hover:underline">
               Register
-            </a>
+            </Link>
           </p>
         </div>
       </main>

@@ -9,7 +9,7 @@ function Dashboard() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/getAll")
+      .get("https://employeeapi-tzw2.onrender.com/getAll")
       .then((response) => {
         console.log("Response:", response.data);
         setEmployees(response.data);
@@ -21,7 +21,7 @@ function Dashboard() {
 
   const deleteEmployee = (id) => {
     axios
-      .delete(`http://localhost:8080/delete?id=${id}`)
+      .delete(`https://employeeapi-tzw2.onrender.com/delete?id=${id}`)
       .then((response) => {
         if (response.data === true) {
           alert("Employee deleted successfully");
